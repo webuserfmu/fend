@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #eee;
+    margin: 50px;
+    padding: 30px;
+    border: 5px solid #ff4500; 
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.menu button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #444;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.curriculo {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.nome {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff4500;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.profissao {
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff8c00; 
+    border-bottom: 2px dashed #555;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.contato p {
+    margin-bottom: 8px;
+}
+
+.experiencia .item, .educacao .item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 3px solid #ff4500;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.experiencia h3, .educacao h3 {
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.empresa {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.periodo {
+    font-style: italic;
+    color: #bbb;
+}
+
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades li {
+    background-color: #555;
+    color: #eee;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+
+.nome::before {
+    content: "Mestre das Sombras ";
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.profissao::after {
+    content: " (Emprego de fachada)";
+    font-size: 0.7em;
+    color: #aaa;
+}
+
+.contato .email::before {
+    content: "DarkNet: ";
+    color: #f08080; 
+}
+
+.contato .telefone::before {
+    content: "Número Descartável: ";
+    color: #f08080; 
+}
+
+.contato .linkedin {
+    text-decoration: line-through;
+    color: #888;
+}
+.contato .linkedin::after {
+    content: " (Apenas para disfarçar)";
+    font-size: 0.7em;
+    color: #aaa;
+}
+
+.experiencia h3 {
+    color: #dc143c; 
+}
+
+.experiencia .empresa::before {
+    content: "Local de Infiltração: ";
+    font-style: italic;
+    color: #f08080;
+}
+
+
+
+.experiencia ul li:nth-child(1)::before {
+    content: "Especialista em desativar sistemas de alarme ";
+    color: #ff69b4; 
+}
+
+.experiencia ul li:nth-child(2)::before {
+    content: "Técnicas avançadas de arrombamento (digital) ";
+    color: #ff69b4;
+}
+
+.experiencia ul li:nth-child(3)::before {
+    content: "Fuga rápida e eficiente ";
+    color: #ff69b4;
+}
+
+.habilidades li:nth-child(1),
+.habilidades li:nth-child(3),
+.habilidades li:nth-child(5), 
+.habilidades li:nth-child(7),
+.habilidades li:nth-child(9),
+.habilidades li:nth-child(11) {
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.habilidades ul li:nth-child(2) {
+    content: "Mestre no disfarce";
+    background-color: #808080 !important;
+}
+
+.habilidades li:nth-child(4) { 
+    content: "Agilidade Felina";
+    background-color: #808080;
+}
+.habilidades li:nth-child(6) { 
+    content: "Sumiço sem rastros";
+    background-color: #808080;
+}
+
+.habilidades ul li:nth-child(8) {
+    content: "Desativação de alarmes";
+    background-color: #808080;
+}
+
+.habilidades ul li:nth-child(10) {
+    content: "Escalada vertical";
+    background-color: #808080;
+}
+
+.educacao h3 {
+    color: #dc143c;
+}
+
+
+
+.educacao > div:nth-child(2) .instituicao::before {
+    content: "Escola da Vida (Noturno): ";
+    font-style: italic;
+    color: #f08080;
+}
+
+.educacao > div:nth-child(2) .instituicao::before {
+    content: "Escola da Vida (Noturno): ";
+    font-style: italic;
+    color: #f08080;
+}
+
+.educacao > div:nth-child(3) .instituicao::before {
+    content: "Porrada de mãe e pai: ";
+    font-style: italic;
+    color: #f08080;
+}
