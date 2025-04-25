@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Ficticio</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <noscript><link rel="stylesheet" href="no-css.css"></noscript>
+    <style>
+        .button-container {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" style="display:none;">
+        <button onclick="alteraCSS()">Mostrar Currículo Alternativo</button>
+    </div>
+	<br>
+    <div class="curriculo">
+        <h1 class="nome">Luís "Byte" Gonçalves</h1>
+        <p class="profissao">Desenvolvedor Full-Stack (Sem CSS)</p>
+
+        <section class="contato">
+            <h2>Contato</h2>
+            <p class="email">nop23302@mail.telepac.pt</p>
+			<p class="telefone">+351 935081686</p>
+        </section>
+
+        <section class="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="item">
+                <h3>Programador Júnior</h3>
+                <p class="empresa">Caseira Software</p>
+                <p class="periodo">1997 - Presente</p>
+                <ul>
+                    <li>Desenvolvimento de aplicações web e API.</li>
+                    <li>Manutenção e otimização de código existente.</li>
+                    <li>Colaboração em projetos ágeis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+				<li>SQL Server</li>
+                <li>Git</li>
+				<li>PHP</li>
+				<li>VB.NET</li>
+                <li>Redes</li>
+				<li>Sistemas Operativos (Windows, Linux)</li>
+				<li>Microsoft Office</li>
+            </ul>
+        </section>
+
+        <section class="educacao">
+            <h2>Educação</h2>
+            <div class="item">
+                <h3>Telecomunicações de Redes</h3>
+                <p class="instituicao">ESTG</p>
+                <p class="periodo">2006 - 2007</p>
+            </div>
+			<div class="item">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="instituicao">FMU</p>
+                <p class="periodo">2025 - atual</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+	
+	
+	
+	
+	
+	
+	
+		flag=false;
+		
+        function alteraCSS() {
+		if (flag){
+            document.getElementById('stylesheet').setAttribute('href', 'style.css');
+		}else{
+			document.getElementById('stylesheet').setAttribute('href', 'no-css.css');
+		}
+			flag=!flag;
+        }
+
+        alteraCSS();
+		
+		
+		document.addEventListener('keydown', function(event) {
+			// Verifica se a tecla Ctrl está pressionada (event.ctrlKey é true)
+			// e se a tecla pressionada é 'a' (event.key é 'a')
+			if (event.ctrlKey && event.key === 'a') {
+				// Impede o comportamento padrão do navegador para Ctrl + A (selecionar tudo)
+				event.preventDefault();
+
+				// Chama a função que você quer executar
+				alteraCSS();
+			}
+		});
+		
+		
+    </script>
+</body>
+</html>
